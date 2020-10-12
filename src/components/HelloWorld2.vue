@@ -1,0 +1,24 @@
+<template>
+  <div class="hello">
+    <h1 @click="show = !show">Hi 2</h1>
+    <div v-if="show">ey</div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "HelloWorld2",
+  props: {
+    msg: String
+  },
+  data() {
+    return {
+      show: true
+    }
+  }
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
+</style>
